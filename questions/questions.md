@@ -2,6 +2,7 @@
 0. Given an array of distinct integer values, count the number of pairs of integers that
 have difference k. For example, given the array {1, 7, 5, 9, 2, 12, 3} and the difference
 k = 2, there are four pairs with difference 2: (1, 3), (3, 5), (5, 7), (7, 9).
+  * [Solution](code/1)
 0. Print all positive integer solution to the equation a^3 + b^3 = c^3 + d^3 wehre a,b,c, and d are integers between 1 and 1000.
 0. Given a smaller string 5 and a bigger string b, design an algorithm to find all permuta-
 tions of the shorter string within the longer one. Print the location of each permutation.
