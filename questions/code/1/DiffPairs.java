@@ -1,30 +1,42 @@
-public class DiffPairs {
+import java.util.Arrays;
 
-        public static int brute(int array[], int diff) {
+public class DiffPairs {
+	// Brute Force
+        public static int Brute(int array[], int diff) {
                 int count = 0;
-                for (int i=0; i< array.length-1; i++)
-                        for (int j=0; j < array.length-1; j++) {
+		// Find 
+                for (int i=0; i<array.length; i++)
+                        for (int j=0; j<array.length; j++) {
                                 if (array[i]+diff == array[j])
-                                        count++;
-                                if (array[i]-diff == array[j])
                                         count++;
                         }
                 return count;
         }
+	// Sort
+	public static int Sorted(int array[], int diff) {
+		int count = 0;
+		// Sort Array
+		Arrays.sort(array);
+		// Find 
+		for (int i=0; i<array.length-2; i++) {
+			if (array[i]+diff == array[i+1])
+				count++;
+			if (array[i]+diff == array[i+2])
+				count++;
+		}
+		return count;
+	}
 
-
-        public static void main( String args[]) {
+        public static void main( String args[] ) {
 
                 int array[] = {1,7,5,9,2,12,3};
                 int diff = 2;
 
                 // Brute Force N^2
-                System.out.println("Brute (N^2): " + brute(array, diff));
+                System.out.println("Brute (N^2)   : " + Brute(array, diff));
 
                 // Sort First
-                int sortedArray[] = QuickSort(array);
-                System.out.println("Sort (N log N): " +
+                System.out.println("Sort (N log N): " + Sorted(array, diff));
         }
-
 }
 
