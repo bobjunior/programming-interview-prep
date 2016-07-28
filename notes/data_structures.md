@@ -53,6 +53,20 @@ for (int i=0; i<al.size(); i++)
 
 ```
 
+## StringBuilder
+### Description
+Resizable Array of strings
+
+### Java Example
+```java
+// Create
+StringBuilder sb = new StringBuilder();
+
+// Append
+sb.append("Some string.");
+
+```
+
 ## Heap
 
 

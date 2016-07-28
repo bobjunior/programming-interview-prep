@@ -21,4 +21,6 @@ and each has all distinct elements.
     | A     | 13 | 27 | 35 | 40 | 49 | 55 | 59 |
     | B     | 17 | 35 | 39 | 40 | 55 | 58 | 60 |
 
-7. 
+7. Implement an algorithm to determine if a string has all unique characters.  What if you cannot use additional data structures?
+8.Check Permutation: Given two strings, write a method to decide if one is a permutation of the
+other. 
